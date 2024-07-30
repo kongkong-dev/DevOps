@@ -64,8 +64,8 @@ affinity: {}
 
 act_runner:
   storageclass: "nks-nas-csi"
-  instance: "http://gitea-server-http:3000"
-  token: "f3Wt0ocU7YKpkYvU2VjmdREF8uOOqy6TJOXQPgzD"
+  instance: "http://gitea-server-http"
+  token: "08KJ1kRAJNqX2hdgvkuzpYoj4Z8ujFxr4fvEw7bh"
   labels:
     - "ubuntu-latest:docker://gitea/runner-images:ubuntu-latest"
 

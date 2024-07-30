@@ -1,6 +1,25 @@
 # .
 
 ```
+## Values.yaml 변경사항
+#Befor
+act_runner:
+  storageclass: "nks-nas-csi"
+  instance: "http://gitea-server-http:3000"
+  token: ""
+  labels:
+    - "ubuntu-latest:docker://gitea/runner-images:ubuntu-latest"
+
+#After
+act_runner:
+  storageclass: "nks-nas-csi"
+  instance: "http://gitea-server-http:80"
+  token: "gitea사이트관리 > actions > Runners에서 발급받은 토큰 입력"
+  labels:
+    - "ubuntu-latest:docker://gitea/runner-images:ubuntu-latest"
+
+
+
 
 helm repo add vquie https://vquie.github.io/helm-charts
 
