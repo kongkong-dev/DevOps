@@ -1,6 +1,14 @@
 # .
 
 ```
+### Valus.yaml 수정
+#Befor
+service.beta.kubernetes.io/ncloud-load-balancer-internal: "true" > 주석 적용
+
+#After
+annotaions: {} > 공백 적용
+
+
 
 helm repo add argo https://argoproj.github.io/argo-helm
 
