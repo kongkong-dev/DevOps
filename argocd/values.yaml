@@ -1985,9 +1985,10 @@ server:
   ## Server service configuration
   service:
     # -- Server service annotations
-    annotations: {
-      service.beta.kubernetes.io/ncloud-load-balancer-internal: "true"
-    }
+    annotations: {}
+    #annotations: {
+    #  service.beta.kubernetes.io/ncloud-load-balancer-internal: "true"
+    #}
     # -- Server service labels
     labels: {}
     # -- Server service type
